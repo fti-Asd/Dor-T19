@@ -3,3 +3,40 @@
         @content;
     }
 }
+
+$colors: (
+    "gray-100":#A3AED0,
+
+    "blue-100":#6AD2FF,
+    "blue-200":#39B8FF,
+    "blue-800":#1B254B,
+    "blue-850":#111C44,
+    "blue-900":#0B1437,
+
+    "purple-100":#EDE7FB,
+    "purple-600":#4318FF,
+    "purple-500":#7551FF,
+    "purple-400":#868CFF,
+
+    "green-100":#D4F8D3,
+    "green-500":#01B574,
+
+    "red-100":#FBE7E9,
+
+    "orange-400":#FFF0BB
+);
+
+
+@each $key, $val in $colors {
+    .text-#{$key} {
+        color: $val;
+    }
+    .bg-#{$key} {
+        background-color: $val;
+    }
+
+    .border-#{$key}{
+        border: 2px solid $val;
+    }
+}
+

@@ -13,13 +13,108 @@
     <link rel="stylesheet" href="./assets/vendor/select2/select2.min.css">
     
     <link rel="stylesheet" href="./assets/css/master.min.css">
+
+    <link rel="stylesheet" href="./assets/css/pages/sign-in.min.css">
     
     <title>signin</title>
 </head>
 <body>
     
     <header></header>
-    <main></main>
+    <main>
+        <div class="container-fluid bg-blue-900 m-0 p-0">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="signin-container d-flex flex-column justify-content-between mx-auto">
+                        <div class="signin-header text-white d-flex gap-2 align-items-center">
+                            <div>
+                                <img src="./public/icons/signin/arrow_left.png" alt="arrow_left">
+                            </div>
+                            
+                            <p class="my-auto">back to dashboard</p>
+                        </div>
+
+                        <div class="signin-body">
+                            <h2>Sign In</h2>
+                            
+                            <p class="text-gray-100">Enter your email and password to sign in!</p>
+
+                            <button class="sign-in-with-google d-flex gap-2 justify-content-center align-items-center bg-blue-800 mx-auto">
+                                <img src="./public/icons/signin/Google__Logo.png" alt="Google__Logo"/>
+                            
+                                <p class="my-auto text-white">Sign in with Google</p>
+                            </button>
+                            
+                            <div class="form-seprator text-white"><span>or</span></div>
+
+                            <form id="signin-form" class="signin-form d-flex flex-column gap-3 text-white" action="/index.html" method="post">
+                                <div class="form-group">
+                                    <label for="email" class="my-2">Email<span class="text-purple-500">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control text-white" placeholder="mail@simmmple.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password" class="my-2">Password<span class="text-purple-500">*</span></label>
+                                    <input type="password" id="password" name="password" class="form-control text-white" placeholder="Min. 8 characters" minlength="8" maxlength="20" required>
+                                    <div class="password-image-container">
+                                        <img src="./public/icons/signin/eye.png" alt="eye">
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center my-3">
+                                    <div class="d-flex align-items-center gap-2 checkbox-container">
+                                        <input type="checkbox" name="keep-logged-in" class="signin-checkbox bg-blue-900 text-blue-900" id="keep-logged-in">
+                                        <label for="keep-logged-in">Keep me logged in</label>
+                                    </div>
+
+                                    <p class="my-auto">Forget password?</p>
+                                </div>
+
+                                <button type="submit" class="signin-submit">Sign In</button>
+                            </form>
+                            
+                            <div class="register-container text-white mb-4 mt-4">Not registered yet? <span>Create an Account</span></div>
+
+                        </div>
+
+                        <div class="signin-footer text-white">© 2022 Horizon UI. All Rights Reserved. Made with love by Simmmple!</div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="horizon-image-container d-flex flex-column justify-content-center align-items-center gap-5 bg-black">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex justify-content-center">
+                                <img class="w-50 mx-auto" src="./public/media/images/signin/moon-in-circle.png" alt="horizon-ui">
+                            </div>
+    
+                            <div class="d-flex justify-content-center">
+                                <img class="w-50 mx-auto" src="./public/media/images/signin/horizon-ui.png" alt="horizon-ui">
+                            </div>
+                        </div>
+
+                        <div class="rounded rounded-4 p-3 text-center border-purple-400 text-white mx-auto">
+                            <p>learn more about Horizon UI on</p>
+                            <h1>horizon-ui.com</h1>
+                        </div>
+
+                        <div class="horizon-image-footer d-flex">
+                            <ul class="list-unstyled m-0 p-0 d-flex align-items-center gap-3 gap-md-4 text-white">
+                                <li>Marketplace</li>
+                                <li>License</li>
+                                <li>Terms of Use</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+
+                        <div class="dark-mode-container">
+                            <img class="w-25" src="./public/icons/_general/moon.png" alt="moon"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 
     <script src="./assets/vendor/jquery/jquery.min.js" defer></script>
@@ -37,6 +132,8 @@
     <script src="./assets/vendor/chart/chart.min.js" defer></script>
 
     <script src="./assets/js/helper.js" defer></script>
+
+    <script src="./assets/js/signin.js" defer></script>
 
     <script src="./assets/js/app.js" defer></script>
 </body>

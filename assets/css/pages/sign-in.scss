@@ -1,0 +1,267 @@
+@import '../../css/base/mixin';
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @include media-query(1200px) {
+        height: auto;
+        overflow-y:auto ;
+    }
+}
+
+
+.signin-container{
+    max-width: 470px;
+    min-width: 280px;
+    height: 100%;
+    padding: 0 20px;
+
+    @include media-query(1200px) {
+        height: 100%;
+        // height: 100dvh;
+    }
+
+    .signin-header{
+        margin: 15px 0;
+    }
+
+    .signin-body{
+        max-width: 410px;
+
+        @include media-query(1200px) {
+            margin: 40px 0;
+        }
+
+
+        h2{
+            font-size: clamp(20px,calc(10px + 1vw), 36px);
+            font-weight: 700;
+            color: white;
+        }
+
+        p{
+            font-size: clamp(8px,calc(0.5rem + 1vw), 16px);
+            font-weight: 400;
+        }
+
+        .sign-in-with-google{
+            width: 100%;
+            height: 50px;
+            border-radius: 16px;
+        }
+
+        .form-seprator{
+            text-align: center;
+            max-width: 100%;
+            margin: 30px 0;
+            position: relative;
+
+            span{
+                z-index: 2;
+                position: absolute;
+                top: 5px;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: block;
+                width: 40px;
+                height: 40px;
+                align-items: center;
+                text-align: center;
+                border-radius: 50%;
+                background-color: var(--clr-blue-900);
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 1px;
+                background-color: var(--clr-blue-800);
+            }
+        }
+
+        .signin-form{
+            margin-top: 40px;
+
+            .form-group{
+                position: relative;
+
+                input{
+                    border-radius: 16px;
+                    background-color: var(--clr-blue-900);
+                    border:1px solid var(--clr-blue-800);
+                    width: 100%;
+                    height: 50px;
+    
+                    &::placeholder{
+                        color: var(--clr-gray-100);
+                    }
+                }
+
+                .password-image-container{
+                    position: absolute;
+                    bottom: 15px;
+                    right: 10px;
+                    background-color: var(--clr-blue-900);
+                    padding: 0px 4px;
+                    z-index: 2;
+                    cursor: pointer;
+                }
+            }
+            
+            .checkbox-container{
+                .signin-checkbox{
+                    appearance: none;
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid white;
+                    background-color: var(--clr-blue-900);
+                    border-radius: 4px;
+                    cursor: pointer;
+                    position: relative;
+                    font-size: clamp(5px,calc(10px + 1vw), 14px);
+
+                    &:checked {
+                        background-color: var(--clr-purple-500);
+                        border-color: var(--clr-blue-900);
+                    }
+
+                    &:checked::after {
+                        content: "✔";
+                        font-size: 12px;
+                        align-items: center;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                label {
+                    cursor: pointer;
+                    font-size: clamp(2px,calc(10px + 1vw), 14px);
+                }
+            }
+
+            .signin-submit{
+                max-width: 100%;
+                height: 54px;
+                background-color: var(--clr-purple-500);
+                text-align: center;
+                border-radius: 16px;
+                font-weight: 700;
+                font-size: clamp(7px,calc(0.5rem + 1vw), 14px);
+            }
+        }
+
+        .register-container{
+            font-size: clamp(7px,calc(0.5rem + 1vw), 14px);
+            font-weight: 400; 
+
+            span{
+                font-size: clamp(7px,calc(0.5rem + 1vw), 14px);
+                font-weight: 700; 
+                cursor: pointer;
+            }
+        }
+    }
+
+    .signin-footer{
+        position: relative;
+        bottom: 15px;
+        font-weight: 500;
+        font-size: clamp(7px,calc(10px + 1vw), 14px);
+        width: 500px;
+
+        @include media-query(992px){
+            bottom: 5px;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+    }
+}
+
+.horizon-image-container{
+    background-image:url("../../../public/media/images/signin/signin-background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    border-radius: 0 0 0 20%;
+    overflow: hidden;
+    position: relative;
+
+    @include media-query(1200px) {
+        min-width: 280px;
+        border-radius: 0;
+    }
+
+    p{
+        font-size: clamp(10px,calc(0.5rem + 1vw), 17.58px);
+        font-weight: 400;
+    }
+
+    h1{
+        font-size: clamp(20px,calc(0.5rem + 1vw), 29.3px);
+        font-weight: 700;
+    }
+
+    .horizon-image-footer{
+        position: absolute;
+        bottom: 15px;
+        font-weight: 500;
+        font-size: clamp(7px,calc(0.5rem + 1vw), 14px);
+
+        ul{
+            
+            li{
+                cursor: pointer;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: white;
+                    transition: width 0.3s ease-in-out;
+                } 
+
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .dark-mode-container{
+        background-image: linear-gradient(to top, var(--clr-purple-600), var(--clr-purple-400));
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 2px solid var(--clr-purple-400);
+        cursor: pointer;
+
+        @include media-query(576px) {
+            bottom: 40px;
+        }
+
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
