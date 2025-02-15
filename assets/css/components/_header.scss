@@ -1,0 +1,103 @@
+.layout-container{
+    height: 100dvh;
+    width: 100%;
+    // min-width: fit-content;
+    // background-color: green;
+    padding: 0 20px;
+    min-width: 230px;
+
+    .header-container{
+        margin: 35px 0;
+
+        .breadcrumb-container{
+            ul{
+                li{
+                    font-size: clamp(8px,calc(8px + 1vw), 14px);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .header-info-container{
+            background-color: var(--clr-blue-850);
+            padding: 10px;
+            border-radius: 30px;
+            // transition: transform 0.3s ease-in-out;
+
+            .search-container{
+                position: relative;
+
+                @include media-query(992px){
+                    display: none;
+                }
+
+                .image-container{
+                    position: absolute;
+                    top: 20%;
+                    left: 10px;
+                    width: 11px;
+                    aspect-ratio: 1;
+                    cursor: pointer;
+
+                    @include media-query(992px){
+                        display: none;
+                    }
+                }
+
+                input{
+                    background-color: var(--clr-blue-900);
+                    border: none;
+                    border-radius: 49px;
+                    padding: 0 30px;
+                    max-width: 214px;
+                    height: 41px;
+                    color: white;
+
+                    @include media-query(992px){
+                        display: none;
+                    }
+
+                    &::placeholder{
+                        color: white;
+                        font-size: clamp(8px,calc(8px + 1vw), 14px);
+                    }
+                }
+            }
+
+            .bell-container{
+                cursor: pointer;
+
+                @include media-query(992px){
+                    display: none;
+                }
+            }
+
+            .dark-mode-container{
+                cursor: pointer;
+
+                @include media-query(992px){
+                    display: none;
+                }
+            }
+
+            .info-container{
+                cursor: pointer;
+
+                @include media-query(992px){
+                    display: none;
+                }
+            }
+
+            .profile-container{
+                width: 41px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -13,13 +13,149 @@
     <link rel="stylesheet" href="./assets/vendor/select2/select2.min.css">
     
     <link rel="stylesheet" href="./assets/css/master.min.css">
+
+    <link rel="stylesheet" href="./assets/css/pages/main-dashboard.min.css">
     
     <title>main-dashboard</title>
 </head>
 <body>
     
     <header></header>
-    <main></main>
+    <main>
+        <div class="d-flex gap-2">
+            <div class="sidebar-container text-white d-flex flex-column justify-content-between">
+                <div>
+                    <div class="sidebar-title-container d-flex align-items-center gap-2">
+                        <h1 class="my-auto">HORIZON</h1>
+    
+                        <span class="my-auto">FREE</span>
+                    </div>
+    
+                    <div class="sidebar-menu-container">
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4 active-page">
+                                <div class="menu-icon-container my-auto">
+                                    <img src="./public/icons/_general/dashboard.png" alt="dashboard">
+                                </div>
+    
+                                <p class="my-auto menu-title">Dashboard</p>
+                            </li>
+    
+                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                                <div class="menu-icon-container my-auto">
+                                    <img src="./public/icons/_general/NFT_marketplace.png" alt="NFT_marketplace">
+                                </div>
+    
+                                <p class="my-auto menu-title">NFT Marketplace</p>
+                            </li>
+    
+                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                                <div class="menu-icon-container my-auto">
+                                    <img src="./public/icons/_general/tables.png" alt="tables">
+                                </div>
+    
+                                <p class="my-auto menu-title">Tables</p>
+                            </li>
+    
+                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                                <div class="menu-icon-container my-auto">
+                                    <img src="./public/icons/_general/kanban.png" alt="kanban">
+                                </div>
+    
+                                <p class="my-auto menu-title">Kanban</p>
+                            </li>
+    
+                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                                <div class="menu-icon-container my-auto">
+                                    <img src="./public/icons/_general/profile.png" alt="profile">
+                                </div>
+    
+                                <p class="my-auto menu-title">Profile</p>
+                            </li>
+    
+                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                                <div class="menu-icon-container my-auto">
+                                    <img src="./public/icons/_general/sign-in.png" alt="sign-in">
+                                </div>
+    
+                                <p class="my-auto menu-title">Sign In</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-upgrade-to-pro">
+                    <div class="image-container">
+                        <img src="./public/media/images/signin/moon-in-circle.png" alt="moon-in-circle">
+                    </div>
+
+                    <p>Upgrade to PRO</p>
+
+                    <span>
+                        to get access to all features! Connect with Venus World! 
+                    </span>
+                </div>
+            </div>
+    
+            <div class="layout-container text-white d-flex flex-column justify-content-between">
+                <div class="header-container d-flex justify-content-between align-items-center">
+                    <div class="breadcrumb-container">
+                        <ul class="d-flex gap-1 m-0 p-0 mb-1">
+                            <li><a href="">Pages</a></li>
+                            <li>/</li>
+                            <li>Dashboard</li>
+                        </ul>
+    
+                        <h3>Main Dashboard</h3>
+                    </div>
+
+                    <div class="header-info-container d-flex align-items-center gap-lg-3">
+                        <div class="search-container d-flex align-items-center justify-content-between">
+                            <div class="image-container">
+                                <img src="./public/icons/_general/search.png" alt="search">
+                            </div>
+                            <input class="form-control" placeholder="Search">
+                        </div>
+
+                        <div class="bell-container">
+                            <img src="./public/icons/_general/bell.png" alt="bell">
+                        </div>
+
+                        <div class="dark-mode-container">
+                            <img src="./public/icons/_general/moon.png" alt="moon">
+                        </div>
+
+                        <div class="info-container">
+                            <img src="./public/icons/_general/info_outline.png" alt="info_outline">
+                        </div>
+
+                        <div class="profile-container">
+                            <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="body-container">main dashboard</div>
+
+                <div class="footer-container my-2">
+                    <div class="row justify-content-between align-items-center gy-4">
+                        <div class="col-12 col-xl-auto order-1 order-xl-0">
+                            <div class="text-white text-sm-center">© 2022 Horizon UI. All Rights Reserved. Made with love by Simmmple!</div>
+                        </div>
+
+                        <div class="col-12 col-xl-auto order-0 order-xl-1">
+                            <ul class="list-unstyled m-0 p-0 d-sm-flex justify-content-center align-items-center gap-3 gap-md-4 text-white">
+                                <li>Marketplace</li>
+                                <li>License</li>
+                                <li>Terms of Use</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 
     <script src="./assets/vendor/jquery/jquery.min.js" defer></script>
@@ -39,5 +175,7 @@
     <script src="./assets/js/helper.js" defer></script>
 
     <script src="./assets/js/app.js" defer></script>
+
+    <script src="./assets/js/sidebar.js" defer></script>
 </body>
 </html>

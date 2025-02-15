@@ -1,0 +1,28 @@
+.footer-container{
+    // background-color: blue;
+    min-width: 200px;
+
+    ul{
+                
+        li{
+            cursor: pointer;
+            position: relative;
+    
+            &::after{
+                content: "";
+                width: 0;
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+                transition: width 0.3s ease-in-out;
+            } 
+    
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+
+}
