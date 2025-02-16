@@ -1,5 +1,6 @@
 .layout-container{
-    height: 100dvh;
+    min-height: 100dvh;
+    height: 100%;
     width: 100%;
     // min-width: fit-content;
     // background-color: green;
@@ -96,6 +97,62 @@
 
                 img{
                     width: 100%;
+                }
+            }
+        }
+
+        .modal{
+            .modal-content{
+                background-color: var(--clr-blue-900);
+
+                .btn-close{
+                    background-color: #596285;
+                }
+
+                .modal-body{                    
+                    .search-container{
+                        position: relative;
+        
+                        .image-container{
+                            position: absolute;
+                            top: 20%;
+                            left: 10px;
+                            width: 11px;
+                            aspect-ratio: 1;
+                            cursor: pointer;
+                        }
+        
+                        input{
+                            background-color: var(--clr-blue-850);
+                            border: none;
+                            border-radius: 49px;
+                            padding: 0 30px;
+                            max-width: 200px;
+                            height: 41px;
+                            color: white;
+
+                            @include media-query(576px){
+                                max-width: 100%;
+                            }
+        
+                            &::placeholder{
+                                color: white;
+                                font-size: clamp(8px,calc(8px + 1vw), 14px);
+                            }
+                        }
+                    }
+        
+                    .bell-container{
+                        cursor: pointer;
+                    }
+        
+                    .dark-mode-container{
+                        cursor: pointer;
+                    }
+        
+                    .info-container{
+                        cursor: pointer;
+                    }
                 }
             }
         }

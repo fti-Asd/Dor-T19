@@ -1,7 +1,11 @@
 $(document).ready(function(){
     $(".sidebar-container").click(function(){
-        $(".sidebar-container").toggleClass("hide");
+        $(".sidebar-container").removeClass("hide");
     });
+
+    $(".layout-container").click(function(){
+        $(".sidebar-container").addClass("hide");
+    })
 });
 
 

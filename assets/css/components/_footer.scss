@@ -1,6 +1,8 @@
 .footer-container{
     // background-color: blue;
     min-width: 200px;
+    font-size: clamp(7px, calc(10px + 1vw), 14px);
+    font-weight: 500;
 
     ul{
                 

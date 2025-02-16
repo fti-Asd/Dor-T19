@@ -25,7 +25,7 @@
         <div class="d-flex gap-2">
             <div class="sidebar-container text-white d-flex flex-column justify-content-between">
                 <div>
-                    <div class="sidebar-title-container d-flex align-items-center gap-2">
+                    <div class="sidebar-title-container d-flex justify-content-center align-items-center gap-2">
                         <h1 class="my-auto">HORIZON</h1>
     
                         <span class="my-auto">FREE</span>
@@ -97,7 +97,7 @@
                 </div>
             </div>
     
-            <div class="layout-container text-white d-flex flex-column justify-content-between">
+            <div class="layout-container bg-secondary text-white d-flex flex-column justify-content-between">
                 <div class="header-container d-flex justify-content-between align-items-center">
                     <div class="breadcrumb-container">
                         <ul class="d-flex gap-1 m-0 p-0 mb-1">
@@ -129,8 +129,50 @@
                             <img src="./public/icons/_general/info_outline.png" alt="info_outline">
                         </div>
 
-                        <div class="profile-container">
+                        <div class="profile-container d-none d-lg-block">
                             <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
+                        </div>
+
+                        <button class="profile-container d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row justify-content-between align-items-center gy-3">
+                                    <div class="col-12 col-sm-auto order-1 order-sm-0">
+                                        <div class="search-container d-flex align-items-center justify-content-between">
+                                            <div class="image-container">
+                                                <img src="./public/icons/_general/search.png" alt="search">
+                                            </div>
+                                            <input class="form-control" placeholder="Search">
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-auto order-0 order-sm-1">
+                                        <div class="d-flex justify-content-end align-items-center gap-3">
+                                            <div class="bell-container">
+                                                <img src="./public/icons/_general/bell.png" alt="bell">
+                                            </div>
+                    
+                                            <div class="dark-mode-container">
+                                                <img src="./public/icons/_general/moon.png" alt="moon">
+                                            </div>
+                    
+                                            <div class="info-container">
+                                                <img src="./public/icons/_general/info_outline.png" alt="info_outline">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
