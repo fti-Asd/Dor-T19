@@ -320,6 +320,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- weekly revenue bar chart -->
                             <div class="col-12 col-xl-6">
                                 <div class="bar-chart-container">
@@ -340,6 +341,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- check table -->
                             <div class="col-12 col-xl-6">
                                 <div class="check-table-container">
@@ -370,6 +372,7 @@
                                     </table>
                                 </div>
                             </div>
+
                             <!-- daily traffic bar chart & pie chart -->
                             <div class="col-12 col-xl-6">
                                 <div class="row g-2">
@@ -442,6 +445,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- complex table -->
                             <div class="col-12 col-xl-6">
                                 <div class="complex-table-container">
@@ -469,6 +473,55 @@
                                             <!-- dynamic data -->
                                         </tbody>
                                     </table>
+                                </div>
+                            </div>
+
+                            <!-- Tasks(todo list) & calender -->
+                            <div class="col-12 col-xl-6">
+                                <div class="row g-2">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="tasks-container d-flex flex-column justify-content-between">
+                                            <!-- header -->
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex justify-content-between align-items-center">                
+                                                    <input type="checkbox" name="todo-checkbox" id="" checked>                           
+                                                    <h6 class="fw-semibold fs-4 m-0">Tasks</h6>
+                                                </div>
+        
+                                                <div class="d-flex gap-2 align-items-center rounded rounded-3 bg-blue-800 header-image-container">
+                                                    <img src="./public/icons/_general/white-three-dots.svg" alt="white-three-dots">
+                                                </div>
+                                            </div>
+        
+                                            <!-- body -->
+                                            <div class="todo-list-container d-flex flex-column justify-content-between gap-4">
+                                                <!-- dynamic data -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="pie-chart-container">
+                                            <!-- header -->
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>                                           
+                                                    <h6 class="fw-semibold fs-6 m-0">Your Pie Chart</h6>
+                                                </div>
+        
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="text-gray-100">Monthly</span>
+                                                    
+                                                    <div>
+                                                        <img src="./public/icons/main-dashboard/gray-arrow.svg" alt="gray-arrow">
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <!-- body -->
+                                            <div class="d-flex flex-column justify-content-between align-items-center gap-0">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -530,6 +583,8 @@
     <script src="./assets/js/main-dashboard/pie-chart.js" defer></script>
     
     <script src="./assets/js/main-dashboard/complex-table.js" defer></script>
+
+    <script src="./assets/js/main-dashboard/tasks.js" defer></script>
     
     <script src="./assets/js/app.js" defer></script>
 </body>
