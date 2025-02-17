@@ -97,95 +97,348 @@
                 </div>
             </div>
     
-            <div class="layout-container bg-secondary text-white d-flex flex-column justify-content-between">
-                <div class="header-container d-flex justify-content-between align-items-center">
-                    <div class="breadcrumb-container">
-                        <ul class="d-flex gap-1 m-0 p-0 mb-1">
-                            <li><a href="">Pages</a></li>
-                            <li>/</li>
-                            <li>Dashboard</li>
-                        </ul>
+            <div class="layout-container text-white d-flex flex-column justify-content-between">
+                <div>
+                    <div class="header-container d-flex justify-content-between align-items-center">
+                        <div class="breadcrumb-container">
+                            <ul class="d-flex gap-1 m-0 p-0 mb-1">
+                                <li><a href="">Pages</a></li>
+                                <li>/</li>
+                                <li>Dashboard</li>
+                            </ul>
+                            
+                            <h3>Main Dashboard</h3>
+                        </div>
     
-                        <h3>Main Dashboard</h3>
-                    </div>
-
-                    <div class="header-info-container d-flex align-items-center gap-lg-3">
-                        <div class="search-container d-flex align-items-center justify-content-between">
-                            <div class="image-container">
-                                <img src="./public/icons/_general/search.png" alt="search">
+                        <div class="header-info-container d-flex align-items-center gap-lg-3">
+                            <div class="search-container d-flex align-items-center justify-content-between">
+                                <div class="image-container">
+                                    <img src="./public/icons/_general/search.png" alt="search">
+                                </div>
+                                <input class="form-control" placeholder="Search">
                             </div>
-                            <input class="form-control" placeholder="Search">
-                        </div>
-
-                        <div class="bell-container">
-                            <img src="./public/icons/_general/bell.png" alt="bell">
-                        </div>
-
-                        <div class="dark-mode-container">
-                            <img src="./public/icons/_general/moon.png" alt="moon">
-                        </div>
-
-                        <div class="info-container">
-                            <img src="./public/icons/_general/info_outline.png" alt="info_outline">
-                        </div>
-
-                        <div class="profile-container d-none d-lg-block">
-                            <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
-                        </div>
-
-                        <button class="profile-container d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
-                        </button>
-                    </div>
-
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                            <div class="bell-container">
+                                <img src="./public/icons/_general/bell.png" alt="bell">
                             </div>
-                            <div class="modal-body">
-                                <div class="row justify-content-between align-items-center gy-3">
-                                    <div class="col-12 col-sm-auto order-1 order-sm-0">
-                                        <div class="search-container d-flex align-items-center justify-content-between">
-                                            <div class="image-container">
-                                                <img src="./public/icons/_general/search.png" alt="search">
+    
+                            <div class="dark-mode-container">
+                                <img src="./public/icons/_general/moon.png" alt="moon">
+                            </div>
+    
+                            <div class="info-container">
+                                <img src="./public/icons/_general/info_outline.png" alt="info_outline">
+                            </div>
+    
+                            <div class="profile-container d-none d-lg-block">
+                                <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
+                            </div>
+    
+                            <button class="profile-container d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
+                            </button>
+                        </div>
+    
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-between align-items-center gy-3">
+                                        <div class="col-12 col-sm-auto order-1 order-sm-0">
+                                            <div class="search-container d-flex align-items-center justify-content-between">
+                                                <div class="image-container">
+                                                    <img src="./public/icons/_general/search.png" alt="search">
+                                                </div>
+                                                <input class="form-control" placeholder="Search">
                                             </div>
-                                            <input class="form-control" placeholder="Search">
+                                        </div>
+                
+                                        <div class="col-12 col-sm-auto order-0 order-sm-1">
+                                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                                <div class="bell-container">
+                                                    <img src="./public/icons/_general/bell.png" alt="bell">
+                                                </div>
+                        
+                                                <div class="dark-mode-container">
+                                                    <img src="./public/icons/_general/moon.png" alt="moon">
+                                                </div>
+                        
+                                                <div class="info-container">
+                                                    <img src="./public/icons/_general/info_outline.png" alt="info_outline">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-            
-                                    <div class="col-12 col-sm-auto order-0 order-sm-1">
-                                        <div class="d-flex justify-content-end align-items-center gap-3">
-                                            <div class="bell-container">
-                                                <img src="./public/icons/_general/bell.png" alt="bell">
-                                            </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                                            <div class="dark-mode-container">
-                                                <img src="./public/icons/_general/moon.png" alt="moon">
+                    <div class="body-container bg-secondary d-flex flex-column gap-2">
+                        <div class="row justify-content-between align-items-center g-2">
+                            <div class="col-12 col-sm-4 col-xxl-2">
+                               <div class="statistics-container d-flex gap-3 align-items-center">
+                                    <div class="image-container my-auto">
+                                        <img src="./public/icons/main-dashboard/earnings.svg" alt="earnings">
+                                    </div>
+    
+                                    <div class="my-auto">
+                                        <span class="text-gray-100">Earnings</span>
+    
+                                        <h6 class="number-container">$350.4</h6>
+                                    </div>
+                               </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-4 col-xxl-2">
+                                <div class="statistics-container d-flex gap-3 align-items-center">
+                                     <div class="image-container my-auto">
+                                         <img src="./public/icons/main-dashboard/dollar.svg" alt="dollar">
+                                     </div>
+     
+                                     <div class="my-auto">
+                                         <span class="text-gray-100">Spend this Month</span>
+     
+                                         <h6 class="number-container">$682.5</h6>
+                                     </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-4 col-xxl-2">
+                                <div class="statistics-container d-flex flex-column gap-0 justify-content-center align-items-start">
+                                        <span class="m-0 p-0">Sales</span>
+
+                                        <h6 class="number-container">$350.4</h6>
+                                        
+                                        <div>
+                                            <span class="text-green-500">+23%</span>
+
+                                            <span class="text-gray-100">since last month</span>
+                                        </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-4 col-xxl-2">
+                                <div class="statistics-container d-flex gap-3 justify-content-between align-items-center">
+                                    <div class="my-auto">
+                                        <span class="text-gray-100">Your balance</span>
+
+                                        <h6 class="number-container">$1,000</h6>
+                                    </div>
+
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div class="balance-image-container my-auto">
+                                            <img src="./public/media/images/main-dashboard/emerica-flag.jfif" alt="emerica-flag">
+                                        </div>
+    
+                                        <button>
+                                            <img src="./public/icons/main-dashboard/white-arrow.png" alt="white-arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-4 col-xxl-2">
+                                <div class="statistics-container d-flex gap-3 align-items-center">
+                                        <div class="image-container new-task-container my-auto">
+                                            <img src="./public/icons/main-dashboard/new-task.svg" alt="new-task">
+                                        </div>
+    
+                                        <div class="my-auto">
+                                            <span class="text-gray-100">New Tasks</span>
+    
+                                            <h6 class="number-container">154</h6>
+                                        </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-4 col-xxl-2">
+                                <div class="statistics-container d-flex gap-3 align-items-center">
+                                        <div class="image-container my-auto">
+                                            <img src="./public/icons/main-dashboard/total-projects.svg" alt="total-projects">
+                                        </div>
+    
+                                        <div class="my-auto">
+                                            <span class="text-gray-100">Total Projects</span>
+    
+                                            <h6 class="number-container">2935</h6>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-12 col-xl-6">
+                                <div class="line-chart-container">
+                                    <!-- header -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-start rounded rounded-3 bg-blue-800 p-2">
+                                            <div class="image-contianer my-auto">
+                                                <img src="./public/icons/main-dashboard/calendar_today.svg" alt="calendar_today">
                                             </div>
-                    
-                                            <div class="info-container">
-                                                <img src="./public/icons/_general/info_outline.png" alt="info_outline">
+                                            
+                                            <p class="my-auto">This month</p>
+                                        </div>
+
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 bg-blue-800 header-image-container">
+                                            <img src="./public/icons/main-dashboard/earnings.svg" alt="calendar_today">
+                                        </div>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <div class="description-container my-3">
+                                            <div class="mt-2">
+                                                <h6 class="fw-bolder fs-4 m-0">$37.5K</h6>
+
+                                                <div class="d-flex gap-3 align-items-center mb-2">
+                                                    <span class="text-gray-100 fw-light">Total Spent</span>
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="green-arrow-container">
+                                                            <img src="./public/icons/main-dashboard/green-arrow.svg" alt="green-arrow">
+                                                        </div>
+    
+                                                        <span class="text-green-500">+2.45%</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="./public/icons/main-dashboard/green-check.svg" alt="green-check">
+
+                                                    <span class="text-green-500 fw-bold">On track</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="line-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-6">
+                                <div class="bar-chart-container">
+                                    <!-- header -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 p-2">                                           
+                                            <p class="my-auto fs-3 fw-semibold">Weekly Revenue</p>
+                                        </div>
+
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 bg-blue-800 header-image-container">
+                                            <img src="./public/icons/main-dashboard/earnings.svg" alt="calendar_today">
+                                        </div>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="d-flex justify-content-between align-items-center gap-2">
+                                        <div id="weekly-revenue-bar-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-6">
+                                <div class="check-table-container">
+                                    <!-- header -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 p-2">                                           
+                                            <p class="my-auto fs-3 fw-semibold">Check Table</p>
+                                        </div>
+
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 bg-blue-800 header-image-container">
+                                            <img src="./public/icons/_general/white-three-dots.svg" alt="white-three-dots">
+                                        </div>
+                                    </div>
+
+                                    <!-- body -->
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>NAME</th>
+                                                <th>PROGRESS</th>
+                                                <th>QUANTITY</th>
+                                                <th>DATE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body">
+                                            <!-- dynamic data -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-6">
+                                <div class="row g-2">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="daily-traffic-container">
+                                            <!-- header -->
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>                                           
+                                                    <span class="text-gray-100 fw-light">Daily Traffic</span>
+                                                    
+                                                    <div class="d-flex align-items-end gap-2">
+                                                        <h6 class="fw-bolder fs-3 m-0">2.579</h6>
+        
+                                                        <span class="text-gray-100 fw-light">Visitors</span>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./public/icons/main-dashboard/green-arrow.svg" alt="green-arrow">
+                                                    </div>
+        
+                                                    <span class="text-green-500">+2.45%</span>
+                                                </div>
+                                            </div>
+        
+                                            <!-- body -->
+                                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                                <div id="daily-traffic-bar-chart"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="pie-chart-container">
+                                            <!-- header -->
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>                                           
+                                                    <h6 class="fw-semibold fs-6 m-0">Your Pie Chart</h6>
+                                                </div>
+        
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="text-gray-100">Monthly</span>
+                                                    
+                                                    <div>
+                                                        <img src="./public/icons/main-dashboard/gray-arrow.png" alt="gray-arrow">
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <!-- body -->
+                                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                                <div id="pie-chart"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                          </div>
                         </div>
+    
                     </div>
                 </div>
-                
-                <div class="body-container">main dashboard</div>
 
                 <div class="footer-container my-2">
-                    <div class="row justify-content-between align-items-center gy-4">
-                        <div class="col-12 col-xl-auto order-1 order-xl-0">
+                    <div class="row justify-content-between align-items-center gy-3">
+                        <div class="col-12 col-lg-auto order-1 order-lg-0">
                             <div class="text-white text-sm-center">© 2022 Horizon UI. All Rights Reserved. Made with love by Simmmple!</div>
                         </div>
 
-                        <div class="col-12 col-xl-auto order-0 order-xl-1">
+                        <div class="col-12 col-lg-auto order-0 order-lg-1">
                             <ul class="list-unstyled m-0 p-0 d-sm-flex justify-content-center align-items-center gap-3 gap-md-4 text-white">
                                 <li>Marketplace</li>
                                 <li>License</li>
@@ -214,10 +467,24 @@
 
     <script src="./assets/vendor/chart/chart.min.js" defer></script>
 
+    <script src="./assets/vendor/highChart/js/highcharts.js" defer></script>
+
+    <script src="./assets/vendor/highChart-more/js/highcharts-more.js" defer></script>
+
     <script src="./assets/js/helper.js" defer></script>
 
-    <script src="./assets/js/app.js" defer></script>
-
     <script src="./assets/js/sidebar.js" defer></script>
+    
+    <script src="./assets/js/main-dashboard/line-chart.js" defer></script>
+
+    <script src="./assets/js/main-dashboard/weekly-revenue-bar-chart.js" defer></script>
+    
+    <script src="./assets/js/main-dashboard/check-table.js" defer></script>
+
+    <script src="./assets/js/main-dashboard/daily-traffic-bar-chart.js" defer></script>
+
+    <script src="./assets/js/main-dashboard/pie-chart.js" defer></script>
+    
+    <script src="./assets/js/app.js" defer></script>
 </body>
 </html>
