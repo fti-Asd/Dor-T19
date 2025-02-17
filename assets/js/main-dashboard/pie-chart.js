@@ -3,32 +3,53 @@ $(document).ready(function(){
         chart: {
             type: 'pie',
             backgroundColor: "#111C44",
-            height: 240
+            height: 190,
+            borderWidth: 0
         },
         title: {
             text: ''
         },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+
+        credits:{
+            enabled:false
         },
+
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: false
+                },
+                borderWidth: 0,
+                borderRadius:0,
+                borderColor: 'transparent',
+                states: {
+                    hover: {
+                        halo: {
+                            size: 0
+                        }
+                    }
+                }
+            }
+        },
+
         series: [{
             name: 'Share',
             colorByPoint: true,
             data: [{
-                name: 'Company A',
-                y: 40,
-                sliced: true,
-                selected: true
+                name: '',
+                y: 60,
+                sliced: false,
+                selected: false,
+                color:"#7551FF"
             }, {
-                name: 'Company B',
-                y: 25
+                name: '',
+                y: 20,
+                color:"#39B8FF"
             }, {
-                name: 'Company C',
-                y: 20
-            }, {
-                name: 'Company D',
-                y: 15
+                name: '',
+                y: 20,
+                color:"#6AD2FF"
             }]
         }]
     });
-})
+});

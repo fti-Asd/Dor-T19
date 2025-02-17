@@ -25,6 +25,6 @@ $(document).ready(function() {
 
         row.append(nameCell, progressCell, quantityCell, dateCell);
         
-        $('#table-body').append(row);
+        $('#check-table').append(row);
     });
 });

@@ -8,6 +8,10 @@ $(document).ready(function () {
 
         title: { text: '' },
 
+        credits:{
+            enabled:false
+        },
+
         xAxis: {
             categories: ['SEP', 'OCT', 'NOV', 'DEC', 'Jan', 'FEB'],
             labels: { style: { fontSize: '14px' , color:"#fff"} },

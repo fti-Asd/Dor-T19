@@ -272,6 +272,7 @@
                         </div>
 
                         <div class="row g-2">
+                            <!-- line graph -->
                             <div class="col-12 col-xl-6">
                                 <div class="line-chart-container">
                                     <!-- header -->
@@ -319,7 +320,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- weekly revenue bar chart -->
                             <div class="col-12 col-xl-6">
                                 <div class="bar-chart-container">
                                     <!-- header -->
@@ -339,7 +340,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- check table -->
                             <div class="col-12 col-xl-6">
                                 <div class="check-table-container">
                                     <!-- header -->
@@ -363,13 +364,13 @@
                                                 <th>DATE</th>
                                             </tr>
                                         </thead>
-                                        <tbody id="table-body">
+                                        <tbody id="check-table">
                                             <!-- dynamic data -->
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-
+                            <!-- daily traffic bar chart & pie chart -->
                             <div class="col-12 col-xl-6">
                                 <div class="row g-2">
                                     <div class="col-12 col-sm-6">
@@ -414,17 +415,60 @@
                                                     <span class="text-gray-100">Monthly</span>
                                                     
                                                     <div>
-                                                        <img src="./public/icons/main-dashboard/gray-arrow.png" alt="gray-arrow">
+                                                        <img src="./public/icons/main-dashboard/gray-arrow.svg" alt="gray-arrow">
                                                     </div>
                                                 </div>
                                             </div>
         
                                             <!-- body -->
-                                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                            <div class="d-flex flex-column justify-content-between align-items-center gap-0">
                                                 <div id="pie-chart"></div>
+
+                                                <div class="description-container d-flex justify-content-between align-items-center bg-blue-800 rounded rounded-4 px-5 py-3 gap-5">
+                                                    <div>
+                                                        <span class="fw-lighter">Your files</span>
+
+                                                        <h6 class="fw-semibold fs-5">63%</h6>
+                                                    </div>
+
+                                                    <div>
+                                                        <span class="fw-lighter">System</span>
+
+                                                        <h6 class="fw-semibold fs-5">25%</h6>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <!-- complex table -->
+                            <div class="col-12 col-xl-6">
+                                <div class="complex-table-container">
+                                    <!-- header -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 p-2">                                           
+                                            <p class="my-auto fs-3 fw-semibold">Check Table</p>
+                                        </div>
+
+                                        <div class="d-flex gap-2 align-items-center rounded rounded-3 bg-blue-800 header-image-container">
+                                            <img src="./public/icons/_general/white-three-dots.svg" alt="white-three-dots">
+                                        </div>
+                                    </div>
+
+                                    <!-- body -->
+                                    <table>
+                                        <thead>
+                                                <th>NAME</th>
+                                                <th>STATUS</th>
+                                                <th>DATE</th>
+                                                <th>PROGRESS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="complex-table">
+                                            <!-- dynamic data -->
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -484,6 +528,8 @@
     <script src="./assets/js/main-dashboard/daily-traffic-bar-chart.js" defer></script>
 
     <script src="./assets/js/main-dashboard/pie-chart.js" defer></script>
+    
+    <script src="./assets/js/main-dashboard/complex-table.js" defer></script>
     
     <script src="./assets/js/app.js" defer></script>
 </body>
