@@ -1,4 +1,4 @@
-@use '../../css/base/mixin';
+@import '../../css/base/mixin';
 
 .body-container{
     .statistics-container{
@@ -401,4 +401,89 @@
             height: 100%;
         }
     }
+
+    .date-picker-container{
+        background-color: var(--clr-blue-850);
+        border-radius: 20px;
+        padding: 20px;
+        min-height: 345px;
+
+        .date-picker {
+            color:  var(--clr-gray-100);
+            width: 100%;
+            max-height: 345px;
+            margin: 0 auto;  
+
+            .controls {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 10px;
+            }
+    
+            select {
+                padding: 5px;
+                font-size: 14px;
+                background-color: transparent;
+                border: 0;
+                color: var(--clr-gray-100);
+
+                option {
+                    background-color: transparent;
+                    color: var(--clr-gray-100);
+
+                    &:focus{
+                        background-color: var(--clr-blue-850);
+                        color: #fff;
+                    }
+                }
+
+                &:focus{
+                    background-color: var(--clr-blue-850);
+                    color: #fff;
+                }
+            }
+    
+            .days-of-week {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                text-align: center;
+                margin-bottom: 10px;
+                font-weight:500;
+            }
+            
+            .days {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                // background-color: aquamarine;
+
+                .day {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    margin: 5px auto;
+
+                    &.selected-start{
+                        background-color: var(--clr-purple-500);
+                        color: rgb(0, 0, 0);
+                    }
+
+                    &.selected-end{
+                        background-color: var(--clr-purple-500);
+                        color: rgb(0, 0, 0);
+                    }
+    
+                    &.in-range {
+                        background-color: rgb(116 81 255 / 9%);
+                        color: white;
+                    }
+                }
+            }            
+        }
+    }
+    
+    
 }

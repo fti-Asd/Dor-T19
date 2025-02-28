@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css">
 
     <link rel="stylesheet" href="./assets/vendor/map/leaflet.css">
-    
-    <link rel="stylesheet" href="./assets/vendor/persian-date-picker/css/persian-datepicker.min.css">
+
+    <!-- <link rel="stylesheet" href="./assets/vendor/daterangepicker/css/daterangepicker.css"> -->
     
     <link rel="stylesheet" href="./assets/vendor/select2/select2.min.css">
     
@@ -273,7 +273,7 @@
 
                         <div class="row g-2">
                             <!-- line graph -->
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-xxl-6">
                                 <div class="line-chart-container">
                                     <!-- header -->
                                     <div class="d-flex justify-content-between align-items-center">
@@ -322,7 +322,7 @@
                             </div>
 
                             <!-- weekly revenue bar chart -->
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-xxl-6">
                                 <div class="bar-chart-container">
                                     <!-- header -->
                                     <div class="d-flex justify-content-between align-items-center">
@@ -343,7 +343,7 @@
                             </div>
 
                             <!-- check table -->
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-xxl-6">
                                 <div class="check-table-container">
                                     <!-- header -->
                                     <div class="d-flex justify-content-between align-items-center">
@@ -374,9 +374,9 @@
                             </div>
 
                             <!-- daily traffic bar chart & pie chart -->
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-xxl-6">
                                 <div class="row g-2">
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-md-6">
                                         <div class="daily-traffic-container">
                                             <!-- header -->
                                             <div class="d-flex justify-content-between align-items-center">
@@ -406,7 +406,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-md-6">
                                         <div class="pie-chart-container">
                                             <!-- header -->
                                             <div class="d-flex justify-content-between align-items-center">
@@ -427,7 +427,7 @@
                                             <div class="d-flex flex-column justify-content-between align-items-center gap-0">
                                                 <div id="pie-chart"></div>
 
-                                                <div class="description-container d-flex justify-content-between align-items-center bg-blue-800 rounded rounded-4 px-5 py-3 gap-5">
+                                                <div class="description-container d-flex justify-content-between align-items-center bg-blue-800 rounded rounded-4 px-5 py-3 gap-0">
                                                     <div>
                                                         <span class="fw-lighter">Your files</span>
 
@@ -447,7 +447,7 @@
                             </div>
 
                             <!-- complex table -->
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-xxl-6">
                                 <div class="complex-table-container">
                                     <!-- header -->
                                     <div class="d-flex justify-content-between align-items-center">
@@ -477,14 +477,14 @@
                             </div>
 
                             <!-- Tasks(todo list) & calender -->
-                            <div class="col-12 col-xl-6">
+                            <div class="col-12 col-xxl-6">
                                 <div class="row g-2">
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-md-6">
                                         <div class="tasks-container d-flex flex-column justify-content-between">
                                             <!-- header -->
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="d-flex justify-content-between align-items-center">                
-                                                    <input type="checkbox" name="todo-checkbox" id="" checked>                           
+                                                    <input type="checkbox" name="todo-checkbox" checked>                           
                                                     <h6 class="fw-semibold fs-4 m-0">Tasks</h6>
                                                 </div>
         
@@ -500,25 +500,39 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6">
-                                        <div class="pie-chart-container">
+                                    <div class="col-12 col-md-6">
+                                        <div class="date-picker-container">
                                             <!-- header -->
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div>                                           
-                                                    <h6 class="fw-semibold fs-6 m-0">Your Pie Chart</h6>
-                                                </div>
-        
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <span class="text-gray-100">Monthly</span>
-                                                    
-                                                    <div>
-                                                        <img src="./public/icons/main-dashboard/gray-arrow.svg" alt="gray-arrow">
-                                                    </div>
-                                                </div>
-                                            </div>
         
                                             <!-- body -->
-                                            <div class="d-flex flex-column justify-content-between align-items-center gap-0">
+                                            <div class="d-flex justify-content-between align-items-center gap-0">
+                                                <div class="date-picker">
+                                                    <!-- Select for Year and Month -->
+                                                    <div class="controls">
+                                                        <select id="year-select">
+                                                            <!-- Year options will be dynamically added -->
+                                                        </select>
+                                                        <select id="month-select">
+                                                            <!-- Month options will be dynamically added -->
+                                                        </select>
+                                                    </div>
+                                                
+                                                    <!-- Days of Week (Row) -->
+                                                    <div class="days-of-week">
+                                                        <span>Sun</span>
+                                                        <span>Mon</span>
+                                                        <span>Tue</span>
+                                                        <span>Wed</span>
+                                                        <span>Thu</span>
+                                                        <span>Fri</span>
+                                                        <span>Sat</span>
+                                                    </div>
+                                                
+                                                    <!-- Calendar Days (30 Days) -->
+                                                    <div class="days">
+                                                        <!-- Calendar days will be dynamically added -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -556,8 +570,6 @@
 
     <script src="./assets/vendor/map/leaflet.js" defer></script>
 
-    <script src="./assets/vendor/persian-date-picker/js/persian-date.min.js" defer></script>
-
     <script src="./assets/vendor/select2/select2.min.js" defer></script>
 
     <script src="./assets/vendor/swal2/sweetalert2@11.js" defer></script>
@@ -585,6 +597,8 @@
     <script src="./assets/js/main-dashboard/complex-table.js" defer></script>
 
     <script src="./assets/js/main-dashboard/tasks.js" defer></script>
+    
+    <script src="./assets/js/main-dashboard/date-picker.js" defer></script>
     
     <script src="./assets/js/app.js" defer></script>
 </body>
