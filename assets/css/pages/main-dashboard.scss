@@ -485,5 +485,54 @@
         }
     }
     
+    .business-design-container{
+        background-color: var(--clr-blue-850);
+        border-radius: 20px;
+        min-height: 345px;
+        overflow: hidden;
+        position: relative;
+
+        .header-container{
+            padding: 0 20px; 
+
+            .header-image-container{
+                height: 48px;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .body-container{
+            padding:0 20px;
+        }
+
+        .footer-container{
+            padding:20px;
+            
+            ul{
+                position: relative;
+                // margin: 0 20px;
+
+                .avatar-container{
+                    width: 30px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border:3px solid var(--clr-blue-800);
+                    background-color: var(--clr-blue-850);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
     
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
 }

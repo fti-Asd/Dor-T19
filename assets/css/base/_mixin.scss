@@ -40,3 +40,15 @@ $colors: (
     }
 }
 
+@for $i from 2 through 5 {
+    .business-design-container{
+        .footer-container{
+            ul{
+                li:nth-child(#{$i}) {
+                    position: relative;
+                    left: -13px * ($i - 1);
+                }
+            }
+        }
+    }
+}
