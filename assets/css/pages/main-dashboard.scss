@@ -535,4 +535,37 @@
             }
         }
     }
+
+    .team-members-container{
+        background-color: var(--clr-blue-850);
+        border-radius: 20px;
+        min-height: 345px;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+
+        .header-image-container{
+            height: 48px;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        ul{
+            .profile-image-contianer{
+                height: 48px;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
