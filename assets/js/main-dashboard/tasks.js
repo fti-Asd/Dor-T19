@@ -32,14 +32,5 @@ $(document).ready(function() {
         });
     }
 
-    $(".todo-list-container").click(function() {
-        let newTaskText = prompt("نام تسک جدید را وارد کنید:");
-        if (newTaskText) {
-            let newTask = { id: tasks.length + 1, text: newTaskText, completed: false };
-            tasks.push(newTask);
-            renderTasks();
-        }
-    });
-
     renderTasks();
 });

@@ -568,4 +568,13 @@
             }
         }
     }
+
+    .control-card-security-container{
+        background-color: var(--clr-blue-850);
+        border-radius: 20px;
+        min-height: 345px;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+    }
 }
