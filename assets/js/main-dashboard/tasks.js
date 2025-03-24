@@ -15,7 +15,7 @@ $(document).ready(function() {
             let todoItem = $(`
                 <div class="d-flex justify-content-between align-items-center" data-id="${task.id}">
                     <div class="d-flex align-items-center">
-                        <input type="checkbox" ${task.completed ? "checked" : ""}>
+                        <input type="checkbox" class="task-checkbox" ${task.completed ? "checked" : ""}>
                         <span>${task.text}</span>
                     </div>
                     <div>
@@ -26,11 +26,14 @@ $(document).ready(function() {
             
             todoList.append(todoItem);
         });
-
-        $("#todo-list").sortable({
-            handle: ".drag-handle"
-        });
     }
 
     renderTasks();
+
+    $(".all-tasks").click(function() {
+        let allChecked = $(".task-checkbox").length === $(".task-checkbox:checked").length;
+        $(".task-checkbox").prop("checked", !allChecked);
+        // console.log($(".task-checkbox").length);
+        // console.log($(".task-checkbox:checked").length);
+    });
 });
