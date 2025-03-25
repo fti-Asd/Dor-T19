@@ -23,6 +23,28 @@ $(document).ready(function() {
         let dateCell = $('<td></td>').html('<p>' + item.date + '</p>');
 
         row.append(nameCell, statusCell, dateCell, progressCell);
-        $('#complex-table').append(row);
+        $('.complex-table').append(row);
+    });
+
+    $.each(data, function(index, item) {
+        let mobileItem = $('<div class="mobile-item d-flex flex-column"></div>').html(`
+            <div class="d-flex flex-column">
+                <p><strong>${item.name}</strong></p>
+                                
+                <div class="status">
+                    <img src="${item.statusImg}" alt="${item.status}"/> 
+
+                    <span> ${item.status} </span>
+                </div>
+                                
+                <div class="progress-container my-2">
+                    <div class="progress-bar bg-purple-500" style="width: ${item.progress}%"></div>
+                </div>
+                
+                <p class="text-gray-100">Date: ${item.date}</p>
+            </div>
+        `);
+
+        $('.complex-table-body-container-mobile').append(mobileItem);
     });
 });

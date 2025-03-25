@@ -135,65 +135,103 @@
             }
         }
 
-        table {
-            width: 100%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: var(--clr-blue-850);
-            border-radius: 10px;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-            font-size: 14px;
-        }
-
-        th {
-            background-color: var(--clr-blue-850);
-            color: #fff;
-        }
-
-        td p {
-            margin: 0;
-        }
-
-        .checkbox {
-            margin: 0;
-            padding: 0;
-        }
-
-        .name-column {
-            display: flex;
-            align-items: center;
-        }
-
-        .name-column input {
-            margin-right: 10px;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border: 2px solid white;
-            background-color: var(--clr-blue-850);
-            border-radius: 4px;
-            cursor: pointer;
-            position: relative;
-            font-size: clamp(5px,calc(10px + 1vw), 14px);
-
-            &:checked {
-                background-color: var(--clr-purple-500);
-                border-color: var(--clr-blue-850);
+        .check-table-body-container{
+            table {
+                width: 100%;
+                margin: 0 auto;
+                border-collapse: collapse;
+                background-color: var(--clr-blue-850);
+                border-radius: 10px;
             }
-
-            &:checked::after {
-                content: "✔";
-                font-size: 12px;
+    
+            th, td {
+                padding: 10px;
+                text-align: left;
+                font-size: 14px;
+            }
+    
+            th {
+                background-color: var(--clr-blue-850);
+                color: #fff;
+                font-size: clamp(5px, calc(10px + 1vw), 12px);
+            }
+    
+            td p {
+                margin: 0;
+            }
+    
+            .checkbox {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .name-column {
+                display: flex;
                 align-items: center;
-                color: var(--clr-blue-850);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            }
+    
+            .name-column input {
+                margin-right: 10px;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid white;
+                background-color: var(--clr-blue-850);
+                border-radius: 4px;
+                cursor: pointer;
+                position: relative;
+                font-size: clamp(5px,calc(10px + 1vw), 14px);
+    
+                &:checked {
+                    background-color: var(--clr-purple-500);
+                    border-color: var(--clr-blue-850);
+                }
+    
+                &:checked::after {
+                    content: "✔";
+                    font-size: 12px;
+                    align-items: center;
+                    color: var(--clr-blue-850);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .check-table-body-container-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input {
+                margin-right: 10px;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid white;
+                background-color: var(--clr-blue-850);
+                border-radius: 4px;
+                cursor: pointer;
+                position: relative;
+                font-size: clamp(5px,calc(10px + 1vw), 14px);
+    
+                &:checked {
+                    background-color: var(--clr-purple-500);
+                    border-color: var(--clr-blue-850);
+                }
+    
+                &:checked::after {
+                    content: "✔";
+                    font-size: 12px;
+                    align-items: center;
+                    color: var(--clr-blue-850);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
@@ -292,65 +330,97 @@
             }
         }
 
-        table {
-            width: 100%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: var(--clr-blue-850);
-            border-radius: 10px;
-        }
-
-        thead{
-            position: relative;
-
-            &::after{
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: -10%;
-                width: 120%;
-                height: 1px;
-                background-color: #39425e;
+        .complex-table-body-container{
+            table {
+                width: 100%;
+                margin: 0 auto;
+                border-collapse: collapse;
+                background-color: var(--clr-blue-850);
+                border-radius: 10px;
+            }
+    
+            thead{
+                position: relative;
+    
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: -10%;
+                    width: 120%;
+                    height: 1px;
+                    background-color: #39425e;
+                }
+            }
+    
+            th, td {
+                padding: 10px;
+                text-align: left;
+                font-size: 14px;
+            }
+    
+            th {
+                background-color: var(--clr-blue-850);
+                color: #fff;
+            }
+    
+            td p {
+                margin: 5px 0;
+            }
+    
+            .status {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            .status img {
+                width: 16px;
+                height: 16px;
+            }
+            
+            .progress-container {
+                width: 100%;
+                background-color: var(--clr-blue-800);
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            
+            .progress-bar {
+                height: 8px;
+                width: 0;
+                transition: width 0.5s;
             }
         }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-            font-size: 14px;
-        }
-
-        th {
-            background-color: var(--clr-blue-850);
-            color: #fff;
-        }
-
-        td p {
-            margin: 5px 0;
-        }
-
-        .status {
+        
+        .complex-table-body-container-mobile{
             display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .status img {
-            width: 16px;
-            height: 16px;
-        }
-        
-        .progress-container {
-            width: 100%;
-            background-color: var(--clr-blue-800);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        
-        .progress-bar {
-            height: 8px;
-            width: 0;
-            transition: width 0.5s;
+            flex-direction: column;
+            gap: 20px;
+
+            .status {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            .status img {
+                width: 16px;
+                height: 16px;
+            }
+            
+            .progress-container {
+                width: 100%;
+                background-color: var(--clr-blue-800);
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            
+            .progress-bar {
+                height: 8px;
+                width: 0;
+                transition: width 0.5s;
+            }
         }
     }
 
@@ -388,6 +458,22 @@
             &:checked::after {
                 content: "✔";
                 font-size: 12px;
+                align-items: center;
+                color: var(--clr-blue-850);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:indeterminate {
+                background-color: var(--clr-purple-500);
+                border-color: var(--clr-blue-850);
+            }
+
+            &:indeterminate::after {
+                content: "-";
+                font-size: 15px;
                 align-items: center;
                 color: var(--clr-blue-850);
                 position: absolute;
