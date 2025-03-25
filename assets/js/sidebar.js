@@ -6,6 +6,12 @@ $(document).ready(function(){
     $(".layout-container").click(function(){
         $(".sidebar-container").addClass("hide");
     })
+
+    $(".sidebar-container").click(function(event) {
+        if ($(event.target).hasClass("close-sidebar-btn")) {
+            $(".sidebar-container").addClass("hide");
+        }
+    });    
 });
 
 
