@@ -52,3 +52,13 @@ $colors: (
         }
     }
 }
+
+$fonts:(
+    "7":12px,
+);
+
+@each $key, $val in $fonts {
+    .fs-#{$key} {
+        font-size: $val;
+    }
+}

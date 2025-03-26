@@ -1,0 +1,46 @@
+@import "../base/mixin";
+
+.body-container{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+
+    .item{
+        border-radius: 20px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .user-profile-container{
+        .background-image-container{
+            width: 100%;
+            height: 100px;
+            
+            // background-color: red;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .user-image-container{
+            width: 80px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,50%);
+            border:3px solid var(--clr-blue-800);
+            // background-color: red;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
