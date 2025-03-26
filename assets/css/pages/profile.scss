@@ -1,7 +1,7 @@
 @import "../base/mixin";
 
 .body-container{
-    background-color: red;
+    // background-color: red;
     display: flex;
     flex-direction: column;
 
@@ -41,6 +41,45 @@
                 height: 100%;
                 object-fit: cover;
             }
+        }
+    }
+
+    .storage-container{
+        .header-image-container{
+            width: 37px;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body-image-container{
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -5px;
+
+            img{
+                width: 42%;
+            }
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: var(--clr-blue-800);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 8px;
+            width: 0;
+            transition: width 0.5s;
+            border-radius: 4px;
         }
     }
 }

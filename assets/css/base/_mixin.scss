@@ -55,6 +55,7 @@ $colors: (
 
 $fonts:(
     "7":12px,
+    "8":10px,
 );
 
 @each $key, $val in $fonts {
