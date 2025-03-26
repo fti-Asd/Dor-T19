@@ -182,8 +182,9 @@
                     
                     <div class="body-container d-flex flex-column gap-2">
                         <div class="row g-2">
+                            <!-- user-profile-container -->
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="text-center bg-blue-850 item user-profile-container">
+                                <div class="item user-profile-container text-center bg-blue-850">
                                     <!-- header -->
                                     <div class="position-relative">
                                         <div class="background-image-container">
@@ -224,8 +225,9 @@
                                 </div>
                             </div>
 
+                            <!-- storage-container -->
                             <div class="col-12 col-md-6 col-lg-3">
-                                <div class="text-center bg-blue-850 item storage-container d-flex flex-column justify-content-between">
+                                <div class="item storage-container text-center bg-blue-850 d-flex flex-column justify-content-between">
                                     <div>
                                         <!-- header -->
                                         <div class="d-flex justify-content-end align-items-center">
@@ -264,28 +266,53 @@
                                 </div>
                             </div>
                             
-                            <div class="col-12 col-md-12 col-lg-5">
-                                <div class="text-center bg-blue-850 item">
+                            <!-- upload-file -->
+                            <div class="col-12 col-md-6 col-lg-5">
+                                <div class="row m-0 item bg-blue-850 upload-file-container">
+                                    <div class="col-12 col-lg-6 ps-0">
+                                        <div class="upload-image-container h-100" id="upload-wrapper">
+                                            <img src="./public/icons/profile/upload-files.png" alt="Upload" for="upload-files">
+                                            
+                                            <input type="file" class="file-input d-none" id="file-upload">
+
+                                            <span>Upload Files</span>
+
+                                            <span class="fw-light fs-9 text-center text-gray-100">PNG, JPG and GIF files are allowed</span>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="d-flex flex-column justify-content-around h-100">
+                                            <div class="d-flex flex-column">
+                                                <span class="fw-bold">Complete your profile</span>
+    
+                                                <span class="fw-light text-gray-100 fs-7">Stay on the pulse of distributed projects with an online whiteboard to plan, coordinate and discuss</span>
+                                                
+                                            </div>
+    
+                                            <div>
+                                                <button class="bg-purple-500 rounded rounded-3 py-2 px-2 text-center w-50 fs-7">Publish now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="item text-center bg-blue-850">
                                     <p>asdf</p>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row g-2">
-                            <div class="col-12 col-lg-3">
-                                <div class="text-center bg-blue-850 item">
-                                    <p>asdf</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-5">
-                                <div class="text-center bg-blue-850 item">
+                            <div class="col-12 col-md-6 col-lg-5">
+                                <div class="item text-center bg-blue-850">
                                     <p>asdf</p>
                                 </div>
                             </div>
                             
-                            <div class="col-12 col-lg-4">
-                                <div class="text-center bg-blue-850 item">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="item text-center bg-blue-850">
                                     <p>asdf</p>
                                 </div>
                             </div>
@@ -331,5 +358,7 @@
     <script src="./assets/js/sidebar.js" defer></script>
 
     <script src="./assets/js/app.js" defer></script>
+
+    <script src="./assets/js/profile/upload-file.js" defer></script>
 </body>
 </html>

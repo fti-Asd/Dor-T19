@@ -82,4 +82,23 @@
             border-radius: 4px;
         }
     }
+
+    .upload-file-container{
+        .upload-image-container{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: var(--clr-blue-800);
+        border:2px dashed #2c365a;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        img{
+            width: 45px;
+            aspect-ratio: 1;
+        }
+        }
+    }
 }
