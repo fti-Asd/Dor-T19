@@ -271,7 +271,7 @@
                             <!-- upload-file -->
                             <div class="col-12 col-md-6 col-xl-5">
                                 <div class="row g-2 m-0 item bg-blue-850 upload-file-container">
-                                    <div class="col-12 col-xl-6 ps-0 pe-0 pe-xxl-5">
+                                    <div class="col-12 col-xl-6 ps-0 pe-0 pe-xl-5">
                                         <div class="upload-image-container h-100" id="upload-wrapper">
                                             <img src="./public/icons/profile/upload-files.png" alt="Upload" for="upload-files">
                                             
@@ -461,9 +461,22 @@
                                 </div>
                             </div>
                             
+                            <!-- notifications -->
                             <div class="col-12 col-md-6 col-xl-4">
-                                <div class="item text-center bg-blue-850">
-                                    <p>asdf</p>
+                                <div class="item notifications-container text-center bg-blue-850">
+                                    <!-- header -->
+                                    <div class="d-flex justify-content-between align-items-center">   
+                                        <p class="fw-bold">Notifications</p>
+
+                                        <div class="rounded rounded-3 bg-blue-800 header-image-container">
+                                            <img src="./public/icons/_general/white-three-dots.svg" alt="white-three-dots">
+                                        </div>
+                                    </div>
+
+                                    <!-- body -->
+                                     <ul class="list-unstyled checkbox-container d-flex flex-column gap-4 gap-sm-1">
+                                        <!-- daynamic data -->
+                                     </ul>
                                 </div>
                             </div>
                         </div>
@@ -507,8 +520,10 @@
 
     <script src="./assets/js/sidebar.js" defer></script>
 
-    <script src="./assets/js/app.js" defer></script>
-
     <script src="./assets/js/profile/upload-file.js" defer></script>
+
+    <script src="./assets/js/profile/notifications.js" defer></script>
+    
+    <script src="./assets/js/app.js" defer></script>
 </body>
 </html>
