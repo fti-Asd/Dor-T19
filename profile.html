@@ -20,7 +20,7 @@
     
     <header></header>
     <main>
-        <div class="d-flex gap-2 overflow-hidden">
+        <div class="d-flex gap-0 gap-sm-2 overflow-x-hidden overflow-y-hidden">
             <div class="sidebar-container text-white d-flex flex-column justify-content-between">
                 <div class="position-relative">
                     <div class="sidebar-title-container d-flex justify-content-center align-items-center gap-2">
@@ -28,12 +28,12 @@
     
                         <span class="my-auto">FREE</span>
                     </div>
-    
-                    <button class="position-absolute top-0 end-0 mx-2 close-sidebar-btn fs-5 text-gray-100">x</button>
 
+                    <button class="position-absolute top-0 end-0 mx-2 close-sidebar-btn fs-5 text-gray-100">x</button>
+    
                     <div class="sidebar-menu-container">
-                        <ul class="list-unstyled d-flex flex-column gap-2">
-                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                        <ul class="list-unstyled d-flex flex-column column-gap-2 row-gap-0 row-gap-sm-2">
+                            <li class="d-flex align-items-center gap-2 px-1 px-xl-4 active-page">
                                 <a class="d-flex align-items-center gap-2" href="./main-dashboard.html">
                                     <div class="menu-icon-container my-auto">
                                         <img src="./public/icons/_general/dashboard.png" alt="dashboard">
@@ -43,7 +43,7 @@
                                 </a>
                             </li>
     
-                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                            <li class="d-flex align-items-center gap-2 px-1 px-xl-4">
                                 <div class="menu-icon-container my-auto">
                                     <img src="./public/icons/_general/NFT_marketplace.png" alt="NFT_marketplace">
                                 </div>
@@ -51,7 +51,7 @@
                                 <p class="my-auto menu-title">NFT Marketplace</p>
                             </li>
     
-                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                            <li class="d-flex align-items-center gap-2 px-1 px-xl-4">
                                 <div class="menu-icon-container my-auto">
                                     <img src="./public/icons/_general/tables.png" alt="tables">
                                 </div>
@@ -59,7 +59,7 @@
                                 <p class="my-auto menu-title">Tables</p>
                             </li>
     
-                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                            <li class="d-flex align-items-center gap-2 px-1 px-xl-4">
                                 <div class="menu-icon-container my-auto">
                                     <img src="./public/icons/_general/kanban.png" alt="kanban">
                                 </div>
@@ -67,15 +67,17 @@
                                 <p class="my-auto menu-title">Kanban</p>
                             </li>
     
-                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4 active-page">
-                                <div class="menu-icon-container my-auto">
-                                    <img src="./public/icons/_general/profile.png" alt="profile">
-                                </div>
-    
-                                <p class="my-auto menu-title">Profile</p>
+                            <li class="d-flex align-items-center gap-2 px-1 px-xl-4">
+                                <a class="d-flex align-items-center gap-2" href="./profile.html">
+                                    <div class="menu-icon-container my-auto">
+                                        <img src="./public/icons/_general/profile.png" alt="profile">
+                                    </div>
+        
+                                    <p class="my-auto menu-title">Profile</p>
+                                </a>
                             </li>
     
-                            <li class="d-flex align-items-center gap-2 px-2 px-xl-4">
+                            <li class="d-flex align-items-center gap-2 px-1 px-xl-4">
                                 <div class="menu-icon-container my-auto">
                                     <img src="./public/icons/_general/sign-in.png" alt="sign-in">
                                 </div>
@@ -183,16 +185,16 @@
                     <div class="body-container d-flex flex-column gap-2">
                         <div class="row g-2">
                             <!-- user-profile-container -->
-                            <div class="col-12 col-md-6 col-lg-4">
+                            <div class="col-12 col-md-6 col-xl-4">
                                 <div class="item user-profile-container text-center bg-blue-850">
                                     <!-- header -->
                                     <div class="position-relative">
-                                        <div class="background-image-container">
-                                            <img class="rounded rounded-4" src="./public/media/images/profile/background.jfif" alt="background">
+                                        <div class="background-image-container rounded rounded-4">
+                                            <img src="./public/media/images/profile/background.jfif" alt="background">
                                         </div>
     
                                         <div class="user-image-container">
-                                            <img class="rounded rounded-circle" src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
+                                            <img src="./public/media/images/_general/avatar1.jfif" alt="avatar1">
                                         </div>
                                     </div>
 
@@ -226,7 +228,7 @@
                             </div>
 
                             <!-- storage-container -->
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-xl-3">
                                 <div class="item storage-container text-center bg-blue-850 d-flex flex-column justify-content-between">
                                     <div>
                                         <!-- header -->
@@ -267,9 +269,9 @@
                             </div>
                             
                             <!-- upload-file -->
-                            <div class="col-12 col-md-6 col-lg-5">
+                            <div class="col-12 col-md-6 col-xl-5">
                                 <div class="row m-0 item bg-blue-850 upload-file-container">
-                                    <div class="col-12 col-lg-6 ps-0">
+                                    <div class="col-12 col-lg-6 ps-0 pe-0 pe-xxl-5">
                                         <div class="upload-image-container h-100" id="upload-wrapper">
                                             <img src="./public/icons/profile/upload-files.png" alt="Upload" for="upload-files">
                                             
@@ -299,19 +301,90 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="item text-center bg-blue-850">
-                                    <p>asdf</p>
+                            <!-- all-projects -->
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="item all-projects-container bg-blue-850">
+                                    <p class="fw-bold">All Projects</p>
+
+                                    <p class="fw-light text-gray-100 fs-7">Here you can find more details about your projects. Keep you user engaged by providing meaningful information.</p>
+                                    
+                                    <ul class="list-unstyled d-flex flex-column gap-3">
+                                        <li class="round rounded-3 bg-blue-800 p-2 d-flex justify-content-between position-relative">
+                                            <div class="d-flex gap-3">
+                                                <div class="card-image-container bg-danger order-0">
+                                                    <img src="./public/media/images/profile/Technology behind the Blockchain.jfif" alt="Technology behind the Blockchain.jfif">
+                                                </div>
+    
+                                                <div class="my-auto order-1">
+                                                    <span class="fs-10">Technology behind the Blockchain</span>
+    
+                                                    <div class="d-flex flex-column d-sm-block">
+                                                        <span class="text-gray-100 fs-10">Project #1 .</span>
+    
+                                                        <a class="text-decoration-underline fs-10 m-0 p-0">See project details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="edit-image-container d-flex justify-content-end my-auto order-2">
+                                                <img src="./public/icons/profile/edit.png" alt="edit">
+                                            </div>
+                                        </li>
+
+                                        <li class="round rounded-3 bg-blue-800 p-2 d-flex justify-content-between position-relative">
+                                            <div class="d-flex gap-3">
+                                                <div class="card-image-container bg-danger order-0">
+                                                    <img src="./public/media/images/profile/Technology behind the Blockchain.jfif" alt="Technology behind the Blockchain.jfif">
+                                                </div>
+    
+                                                <div class="my-auto order-1">
+                                                    <span class="fs-10">Technology behind the Blockchain</span>
+    
+                                                    <div class="d-flex flex-column d-sm-block">
+                                                        <span class="text-gray-100 fs-10">Project #1 .</span>
+    
+                                                        <a class="text-decoration-underline fs-10 m-0 p-0">See project details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="edit-image-container d-flex justify-content-end my-auto order-2">
+                                                <img src="./public/icons/profile/edit.png" alt="edit">
+                                            </div>
+                                        </li>
+
+                                        <li class="round rounded-3 bg-blue-800 p-2 d-flex justify-content-between position-relative">
+                                            <div class="d-flex gap-3">
+                                                <div class="card-image-container bg-danger order-0">
+                                                    <img src="./public/media/images/profile/Technology behind the Blockchain.jfif" alt="Technology behind the Blockchain.jfif">
+                                                </div>
+    
+                                                <div class="my-auto order-1">
+                                                    <span class="fs-10">Technology behind the Blockchain</span>
+    
+                                                    <div class="d-flex flex-column d-sm-block">
+                                                        <span class="text-gray-100 fs-10">Project #1 .</span>
+    
+                                                        <a class="text-decoration-underline fs-10 m-0 p-0">See project details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="edit-image-container d-flex justify-content-end my-auto order-2">
+                                                <img src="./public/icons/profile/edit.png" alt="edit">
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-5">
+                            <div class="col-12 col-md-6 col-xl-5">
                                 <div class="item text-center bg-blue-850">
                                     <p>asdf</p>
                                 </div>
                             </div>
                             
-                            <div class="col-12 col-md-6 col-lg-4">
+                            <div class="col-12 col-md-6 col-xl-4">
                                 <div class="item text-center bg-blue-850">
                                     <p>asdf</p>
                                 </div>

@@ -1,23 +1,22 @@
 @import "../base/mixin";
 
 .body-container{
-    // background-color: red;
     display: flex;
     flex-direction: column;
 
     .item{
         border-radius: 20px;
-        height: 300px;
         padding: 20px;
     }
 
     .user-profile-container{
+        height: 300px;
+
         .background-image-container{
             width: 100%;
             height: 100px;
+            overflow: hidden;
             
-            // background-color: red;
-
             img{
                 width: 100%;
                 height: 100%;
@@ -34,7 +33,7 @@
             left: 50%;
             transform: translate(-50%,50%);
             border:3px solid var(--clr-blue-800);
-            // background-color: red;
+            overflow: hidden;
 
             img{
                 width: 100%;
@@ -45,6 +44,8 @@
     }
 
     .storage-container{
+        height: 300px;
+
         .header-image-container{
             width: 37px;
             aspect-ratio: 1;
@@ -62,9 +63,10 @@
             align-items: center;
             position: relative;
             top: -5px;
+            overflow: hidden;
 
             img{
-                width: 42%;
+                width: clamp(30px, calc(20px + 1vw), 45px);
             }
         }
 
@@ -84,21 +86,58 @@
     }
 
     .upload-file-container{
+        min-height: 300px;
+        // background-color: red;
+
+        @include media-query(1200px){
+            min-height: 370px;
+            // background-color: blue;
+        }
+
         .upload-image-container{
             display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        background-color: var(--clr-blue-800);
-        border:2px dashed #2c365a;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: var(--clr-blue-800);
+            border:2px dashed #2c365a;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow: hidden;
 
         img{
-            width: 45px;
+            width: clamp(30px, calc(20px + 1vw), 45px);
             aspect-ratio: 1;
         }
+        }
+    }
+
+    .all-projects-container{
+        min-height: 370px;
+
+        .card-image-container{
+            border-radius: 10px;
+            overflow: hidden;
+            height: 50px;
+            aspect-ratio: 1;
+
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .edit-image-container{
+            width: 10px;
+            aspect-ratio: 1;
+            margin: 0;
+
+            img{
+                width: 7px;
+                height: 7px;
+                margin: auto;
+            }
         }
     }
 }

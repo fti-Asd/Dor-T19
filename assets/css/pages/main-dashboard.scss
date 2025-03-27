@@ -15,6 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
 
             img{
                 max-width: 30%;
@@ -52,6 +53,7 @@
 
         .new-task-container{
             background-image: linear-gradient(to right,var(--clr-blue-200),var(--clr-blue-100));
+            overflow: hidden;
 
             img{
                 max-width: 100%;
@@ -75,7 +77,7 @@
 
         .description-container{
             span{
-                font-size: clamp(5px, calc(10px + 1vw), 12px);
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
             }
 
             .green-arrow-container{
@@ -103,12 +105,6 @@
             align-items: center;
         }
 
-        .description-container{
-            span{
-                font-size: clamp(5px, calc(10px + 1vw), 12px);
-            }
-        }
-
         #weekly-revenue-bar-chart{
             width: 100%;
             margin: 0 auto;
@@ -120,6 +116,7 @@
         border-radius: 20px;
         padding: 20px;
         min-height: 345px;
+        font-size: clamp(5px, calc(10px + 1vw), 15px);
 
         .header-image-container{
             width: 37px;
@@ -127,12 +124,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .description-container{
-            span{
-                font-size: clamp(5px, calc(10px + 1vw), 12px);
-            }
         }
 
         .check-table-body-container{
@@ -147,13 +138,14 @@
             th, td {
                 padding: 10px;
                 text-align: left;
-                font-size: 14px;
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
             }
     
             th {
                 background-color: var(--clr-blue-850);
                 color: #fff;
-                font-size: clamp(5px, calc(10px + 1vw), 12px);
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
             }
     
             td p {
@@ -180,7 +172,8 @@
                 border-radius: 4px;
                 cursor: pointer;
                 position: relative;
-                font-size: clamp(5px,calc(10px + 1vw), 14px);
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
     
                 &:checked {
                     background-color: var(--clr-purple-500);
@@ -189,7 +182,8 @@
     
                 &:checked::after {
                     content: "✔";
-                    font-size: 12px;
+                    font-size: clamp(5px, calc(10px + 1vw), 15px);
+                    // background-color: red;
                     align-items: center;
                     color: var(--clr-blue-850);
                     position: absolute;
@@ -215,7 +209,8 @@
                 border-radius: 4px;
                 cursor: pointer;
                 position: relative;
-                font-size: clamp(5px,calc(10px + 1vw), 14px);
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
     
                 &:checked {
                     background-color: var(--clr-purple-500);
@@ -224,7 +219,8 @@
     
                 &:checked::after {
                     content: "✔";
-                    font-size: 12px;
+                    font-size: clamp(5px, calc(10px + 1vw), 15px);
+                    // background-color: red;
                     align-items: center;
                     color: var(--clr-blue-850);
                     position: absolute;
@@ -315,6 +311,7 @@
         padding: 20px;
         min-height: 345px;
         overflow: hidden;
+        font-size: clamp(5px, calc(10px + 1vw), 15px);
 
         .header-image-container{
             width: 37px;
@@ -322,12 +319,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .description-container{
-            span{
-                font-size: clamp(5px, calc(10px + 1vw), 12px);
-            }
         }
 
         .complex-table-body-container{
@@ -356,7 +347,8 @@
             th, td {
                 padding: 10px;
                 text-align: left;
-                font-size: 14px;
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
             }
     
             th {
@@ -372,11 +364,13 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-            }
-            
-            .status img {
+                overflow: hidden;
+
+                img{
                 width: 16px;
                 height: 16px;
+
+                }
             }
             
             .progress-container {
@@ -403,11 +397,12 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-            }
-            
-            .status img {
-                width: 16px;
-                height: 16px;
+                overflow: hidden;
+                
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
             }
             
             .progress-container {
@@ -430,6 +425,7 @@
         border-radius: 20px;
         padding: 20px;
         min-height: 345px;
+        font-size: clamp(5px, calc(10px + 1vw), 15px);
 
         .header-image-container{
             width: 37px;
@@ -449,7 +445,8 @@
             border-radius: 4px;
             cursor: pointer;
             position: relative;
-            font-size: clamp(5px,calc(10px + 1vw), 14px);
+            font-size: clamp(5px, calc(10px + 1vw), 15px);
+            // background-color: red;
 
             &:checked {
                 background-color: var(--clr-purple-500);
@@ -458,7 +455,8 @@
 
             &:checked::after {
                 content: "✔";
-                font-size: 12px;
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
                 align-items: center;
                 color: var(--clr-blue-850);
                 position: absolute;
@@ -474,7 +472,8 @@
 
             &:indeterminate::after {
                 content: "-";
-                font-size: 15px;
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
                 align-items: center;
                 color: var(--clr-blue-850);
                 position: absolute;
@@ -492,8 +491,9 @@
     .date-picker-container{
         background-color: var(--clr-blue-850);
         border-radius: 20px;
-        padding: 20px;
+        padding: 8px;
         min-height: 345px;
+        font-size: clamp(8px, calc(10px + 1vw), 15px);
 
         .date-picker {
             color:  var(--clr-gray-100);
@@ -509,7 +509,8 @@
     
             select {
                 padding: 5px;
-                font-size: 14px;
+                font-size: clamp(5px, calc(10px + 1vw), 15px);
+                // background-color: red;
                 background-color: transparent;
                 border: 0;
                 color: var(--clr-gray-100);
@@ -612,7 +613,9 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 10px;
+                    font-size: clamp(5px, calc(10px + 1vw), 15px);
+                    // background-color: red;
+                    overflow: hidden;
     
                     img{
                         width: 100%;
@@ -630,9 +633,10 @@
         padding: 20px;
         overflow: hidden;
         position: relative;
-
+        font-size: clamp(5px, calc(10px + 1vw), 15px);
+        
         .header-image-container{
-            height: 48px;
+            height: 40px;
             aspect-ratio: 1;
             display: flex;
             justify-content: center;
@@ -643,7 +647,7 @@
         ul{
             .profile-image-contianer{
                 height: 48px;
-                aspect-ratio: 1;
+                width: 48px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -651,6 +655,8 @@
 
                 img{
                     object-fit: cover;
+                    height: 48px;
+                    width: 48px;
                 }
             }
         }
@@ -676,6 +682,7 @@
         .header-image-container{
             width: 100%;
             max-height: 50%;
+            overflow: hidden;
 
             img{
                 width: 100%;
@@ -705,6 +712,11 @@
             left: 30px;
             bottom: 0;
             transform: translate(0,50%);
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
         }
     }
 }
