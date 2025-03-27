@@ -90,7 +90,12 @@
         // background-color: red;
 
         @include media-query(1200px){
-            min-height: 370px;
+            min-height: 380px;
+            // background-color: blue;
+        }
+
+        @include media-query(576px){
+            min-height: 300px;
             // background-color: blue;
         }
 
@@ -114,7 +119,12 @@
     }
 
     .all-projects-container{
-        min-height: 370px;
+        min-height: 380px;
+
+        @include media-query(768px){
+            min-height: 360px;
+            // background-color: green;
+        }
 
         .card-image-container{
             border-radius: 10px;
