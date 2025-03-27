@@ -10,7 +10,11 @@
     }
 
     .user-profile-container{
-        height: 300px;
+        min-height: 330px;
+     
+        @include media-query(576px){
+            min-height: fit-content;
+        }
 
         .background-image-container{
             width: 100%;
@@ -44,7 +48,11 @@
     }
 
     .storage-container{
-        height: 300px;
+        min-height: 330px;
+     
+        @include media-query(576px){
+            min-height: fit-content;
+        }
 
         .header-image-container{
             width: 37px;
@@ -86,14 +94,14 @@
     }
 
     .upload-file-container{
-        min-height: 300px;
+        min-height: 330px;
 
-        @include media-query(1200px){
-            min-height: 390px;
+        @include media-query(1199px){
+            min-height: 400px;
         }
 
         @include media-query(576px){
-            min-height: 300px;
+            min-height: fit-content;
         }
 
         .upload-image-container{
@@ -120,7 +128,7 @@
         // background-color: red;
 
         @include media-query(1400px){
-            height: 390px;
+            height: 400px;
             // background-color: green;
         }
 
@@ -160,7 +168,7 @@
         // background-color: red;
 
         @include media-query(1400px){
-            height: 390px;
+            height: 400px;
             // background-color: green;
         }
 
@@ -175,7 +183,7 @@
         // background-color: red;
 
         @include media-query(1400px){
-            height: 390px;
+            height: 400px;
             // background-color: green;
         }
 
